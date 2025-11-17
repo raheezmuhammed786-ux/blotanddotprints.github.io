@@ -1,0 +1,23 @@
+body {
+    background-color: #121212; /* Dark Background */
+    color: #ffffff; /* White Text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50; /* Green Accent Color for Growth/Digital */
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.container {
+    padding: 20px;
+}
