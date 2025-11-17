@@ -36,9 +36,10 @@ nav {
 }
 
 /* Hero Banner Style */
+/* Hero Banner Style */
 .hero-banner {
-    /* ഇവിടെയാണ് ചിത്രം വരാൻ CSS ഉപയോഗിക്കുന്നത് */
-    background: url('hero-image.jpg') no-repeat center center/cover; /* 'hero-image.jpg' എന്ന പേരിൽ ഒരു ചിത്രം അപ്‌ലോഡ് ചെയ്യണം */
+    /* നിങ്ങൾ അപ്‌ലോഡ് ചെയ്ത hero-image.jpg എന്ന ചിത്രം ഇവിടെ വരും */
+    background: url('hero-image.jpg') no-repeat center center/cover;
     height: 400px; /* Banner-ൻ്റെ ഉയരം */
     display: flex;
     align-items: center;
@@ -46,6 +47,7 @@ nav {
     padding-right: 50px;
     color: white; /* ടെക്സ്റ്റ് വെള്ള നിറത്തിൽ */
     text-align: right;
+}
 }
 
 .banner-content h2, .banner-content h3 {
