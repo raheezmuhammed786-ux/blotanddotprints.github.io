@@ -1,63 +1,94 @@
 body {
-    /* മിനിമൽ വൈറ്റ് ബാക്ക്ഗ്രൗണ്ടും കറുപ്പ് ടെക്സ്റ്റും */
-    background-color: #ffffff;
+    background-color: #f5f5f5; /* Light Gray Background */
     color: #1a1a1a;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-h1 {
-    /* ബ്രാൻഡ് നാമത്തിന് കട്ടിയുള്ള ഫോണ്ടും ലെറ്റർ സ്പേസിങ്ങും */
-    color: #333333;
-    padding-top: 80px;
-    font-size: 3.5em;
-    letter-spacing: 5px; 
-}
-
-p {
-    font-size: 1.2em;
-    color: #666666;
-    line-height: 1.8;
-}
-
-.container {
-    padding: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* നാവിഗേഷൻ ബാർ സ്റ്റൈലിംഗ് */
-nav {
+/* Header/Navigation Bar Style */
+header {
     background-color: #ffffff;
-    padding: 15px 0;
     border-bottom: 1px solid #eeeeee;
 }
 
-nav a {
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* എല്ലാ മെനു ഐറ്റംസും ഒരു വരിയിൽ വരാൻ */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 900;
     color: #1a1a1a;
+}
+
+.menu a {
     text-decoration: none;
-    margin: 0 25px;
-    font-size: 1em;
-    font-weight: 500;
+    color: #555;
+    margin: 0 15px;
+    font-size: 0.9em;
     text-transform: uppercase;
 }
 
-nav a:hover {
-    border-bottom: 2px solid #000000;
-    padding-bottom: 5px;
+/* Hero Banner Style */
+.hero-banner {
+    /* ഇവിടെയാണ് ചിത്രം വരാൻ CSS ഉപയോഗിക്കുന്നത് */
+    background: url('hero-image.jpg') no-repeat center center/cover; /* 'hero-image.jpg' എന്ന പേരിൽ ഒരു ചിത്രം അപ്‌ലോഡ് ചെയ്യണം */
+    height: 400px; /* Banner-ൻ്റെ ഉയരം */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* ഉള്ളടക്കം വലതുവശത്തേക്ക് നീക്കാൻ */
+    padding-right: 50px;
+    color: white; /* ടെക്സ്റ്റ് വെള്ള നിറത്തിൽ */
+    text-align: right;
 }
 
-/* CTA ബട്ടൺ */
+.banner-content h2, .banner-content h3 {
+    margin: 0;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.banner-content h3 {
+    color: #ffcc00; /* Yellow Accent */
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
 .cta-button {
-    background-color: #000000; /* Black button */
+    background-color: #000000;
     color: white;
-    padding: 15px 40px;
+    padding: 12px 30px;
     text-decoration: none;
-    border-radius: 0;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: bold;
-    letter-spacing: 2px;
+}
+
+/* Product Grid Style */
+.product-listing {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ഒരു വരിയിൽ 3 പ്രോഡക്റ്റുകൾ */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
