@@ -1,23 +1,63 @@
 body {
-    background-color: #121212; /* Dark Background */
-    color: #ffffff; /* White Text */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* മിനിമൽ വൈറ്റ് ബാക്ക്ഗ്രൗണ്ടും കറുപ്പ് ടെക്സ്റ്റും */
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 h1 {
-    color: #4CAF50; /* Green Accent Color for Growth/Digital */
-    padding-top: 50px;
-    font-size: 3em;
+    /* ബ്രാൻഡ് നാമത്തിന് കട്ടിയുള്ള ഫോണ്ടും ലെറ്റർ സ്പേസിങ്ങും */
+    color: #333333;
+    padding-top: 80px;
+    font-size: 3.5em;
+    letter-spacing: 5px; 
 }
 
 p {
     font-size: 1.2em;
-    color: #cccccc;
+    color: #666666;
+    line-height: 1.8;
 }
 
 .container {
-    padding: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* നാവിഗേഷൻ ബാർ സ്റ്റൈലിംഗ് */
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* CTA ബട്ടൺ */
+.cta-button {
+    background-color: #000000; /* Black button */
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    margin-top: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
