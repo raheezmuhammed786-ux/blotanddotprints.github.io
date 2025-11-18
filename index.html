@@ -1,49 +1,153 @@
-<!DOCTYPE html>
-<html lang="ml">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOT AND DOT | പ്രീമിയം സ്ട്രീറ്റ് വെയർ</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blot & Dot — Creative Digital Studio</title>
+  <meta name="description" content="Blot & Dot — Creative digital services: web design, branding & marketing." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;color:#e6eef8;background:linear-gradient(180deg,#061024 0%, #071a2a 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .brand-mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:18px;box-shadow:0 6px 24px rgba(124,58,237,0.18)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:40px;margin:0 0 12px;color:white}
+    .lead{color:var(--muted);margin-bottom:18px}
+    .cta{display:inline-block;background:linear-gradient(90deg,var(--accent),#06b6d4);padding:12px 18px;border-radius:12px;color:white;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(7,12,28,0.6)}
+    .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .feature{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .feature h4{margin:0 0 6px;color:white}
+    .showcase{margin-top:28px;border-radius:12px;overflow:hidden}
+    .showcase img{display:block;width:100%;height:220px;object-fit:cover}
+    section{padding:56px 0;border-top:1px solid rgba(255,255,255,0.02)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+    footer{padding:36px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    form input, form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:white;margin-bottom:10px}
+    form button{padding:12px 14px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:700}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:1fr 1fr}.grid-2{grid-template-columns:1fr}}
+    @media (max-width:560px){.features{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-
+  <div class="container">
     <header>
-        <nav>
-            <div class="img src="https://i.ibb.co/8LcbqzTC/14-2.png">BLOT AND DOT</div>
-            <div class="menu">
-                <a href="#new">NEW COLLECTION </a>
-                <a href="#shop">CONDACT</a>
-                <a href="#tshirts">T-SHIRTS</a>
-                <a href="#hoodies">ഹൂഡീസ്</a>
-                
-            </div>
-            <div class="search">🔎</div> 
-        </nav>
+      <div class="logo">
+        <div class="brand-mark">B&amp;D</div>
+        <div>
+          <div style="font-weight:800;color:white">Blot &amp; Dot</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:4px">Creative digital studio</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <main class="hero-banner">
-        <div class="banner-content">
-            <h2>ഓവർസൈസ്ഡ് പ്രിന്റഡ് ടി-ഷർട്ടുകൾ</h2>
-            <h3>ഏതെങ്കിലും 3 എണ്ണം ₹1099-ന് സ്വന്തമാക്കൂ</h3>
-            <a href="#shop-now" class="cta-button">ഇപ്പോൾ വാങ്ങുക</a>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Beautiful products. Thoughtful design. Fast builds.</h1>
+          <p class="lead">We design and develop modern websites, brand identities and growth-focused digital experiences for startups and small businesses.</p>
+          <a class="cta" href="#contact">Get a free quote</a>
+
+          <div class="card" style="margin-top:20px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700;color:white">Fixed-price website</div>
+                <div style="color:var(--muted);font-size:13px;margin-top:6px">From <strong>$799</strong> — responsive, SEO-ready, and fast.</div>
+              </div>
+              <div style="font-size:12px;color:var(--muted)">Turnaround: 7-14 days</div>
+            </div>
+
+            <div class="features">
+              <div class="feature"><h4>Responsive</h4><div class="muted">Looks great on any device.</div></div>
+              <div class="feature"><h4>CMS Ready</h4><div class="muted">Integrate WordPress or headless CMS.</div></div>
+              <div class="feature"><h4>Performance</h4><div class="muted">Optimized images &amp; code.</div></div>
+            </div>
+          </div>
         </div>
+
+        <aside>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Showcase">
+            <div style="padding-top:12px;color:var(--muted);font-size:14px">Sample project preview — modern landing page.</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <h2 style="color:white;margin:0 0 12px">Services</h2>
+          <p style="color:var(--muted);margin:0 0 20px">What we do best.</p>
+          <div class="features">
+            <div class="feature"><h4>Web Design</h4><div class="muted">UI/UX, prototypes, and full frontend builds.</div></div>
+            <div class="feature"><h4>Branding</h4><div class="muted">Logos, identity systems, and style guides.</div></div>
+            <div class="feature"><h4>E‑commerce</h4><div class="muted">Shopify, WooCommerce or custom carts.</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="container">
+          <h2 style="color:white;margin:0 0 12px">Selected work</h2>
+          <p style="color:var(--muted);margin:0 0 20px">A few recent projects.</p>
+
+          <div class="grid-2">
+            <div class="card showcase"><img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1"></div>
+            <div>
+              <div class="card" style="margin-bottom:12px"><h3 style="margin:0;color:white">Startup landing</h3><p style="color:var(--muted);margin-top:8px">High-conversion landing page for a SaaS product.</p></div>
+              <div class="card"><h3 style="margin:0;color:white">Brand refresh</h3><p style="color:var(--muted);margin-top:8px">Identity and website for a boutique studio.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2 style="color:white;margin:0 0 12px">Contact</h2>
+          <p style="color:var(--muted);margin:0 0 20px">Tell us about your project — we reply within 1 business day.</p>
+
+          <div class="grid-2">
+            <div class="card">
+              <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <input type="text" name="name" placeholder="Your name" required />
+                <input type="email" name="email" placeholder="Email address" required />
+                <input type="text" name="subject" placeholder="Subject" />
+                <textarea name="message" placeholder="Project brief" rows="6"></textarea>
+                <button type="submit">Send message</button>
+              </form>
+            </div>
+            <div>
+              <div class="card" style="margin-bottom:12px"><strong style="color:white">Email</strong><div style="color:var(--muted);margin-top:6px">hello@blotanddot.example</div></div>
+              <div class="card"><strong style="color:white">Location</strong><div style="color:var(--muted);margin-top:6px">Remote — India</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <section class="product-listing">
-        <h2>പ്രിന്റഡ് ടി-ഷർട്ടുകൾ (136 ഇനങ്ങൾ)</h2>
-        <div class="grid-container">
-            <div class="product-card">
-                <div class="product-image">
-                                    </div>
-                <p class="product-name">പ്രീമിയം ബീജ് ഓവർസൈസ്ഡ് ടീ</p>
-                <p class="product-price">₹366 <del>₹549</del></p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
+    <footer>
+      <div>© <span id="year"></span> Blot &amp; Dot — All rights reserved</div>
+      <div style="color:var(--muted)">Built with care • <a href="#contact" style="color:var(--muted);text-decoration:underline">Get a quote</a></div>
+    </footer>
+  </div>
 
-            </div>
-    </section>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      // Basic visual feedback only — replace with real endpoint when ready
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Sending...';
+      setTimeout(()=>{btn.textContent='Message sent ✓'; btn.disabled=true},900);
+    }
+  </script>
 </body>
 </html>
